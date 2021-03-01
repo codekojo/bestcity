@@ -1,0 +1,113 @@
+ /* ==================================
+ 
+            Base Element Styles 
+ 
+ =====================================*/ 
+ 
+* {
+   box-sizing: border-box; 
+}
+
+
+ body { 
+   line-height: 1.5;
+   font-size: 1.2em;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+ .main--nav a:hover{
+    color: #093a58;
+ }
+
+ .main--nav a {
+   text-transform: uppercase; 
+ }
+
+ .name a, .main--nav a {
+    color: #3acec2;
+   text-decoration: none;
+   padding: 10px 15px; 
+   display: block;
+   
+ }
+ 
+ 
+ /* ==================================
+ 
+            Base Layout Styles 
+ 
+ =====================================*/
+
+/* ------ Navigation ----------*/
+
+.name {
+   margin: 0;
+}
+
+.name, .main--nav li {
+   text-align: center;
+   background-color: white;
+   margin-top: 6px;
+   margin-bottom: 6px;
+}
+ /* ------Layout Containers ----------*/
+
+
+ .container {
+   padding-left: 1em;
+   padding-right: 1em;
+ }
+
+ .main--header {
+    background-color: #3acec2;
+    padding: 1em 0;
+    text-align: center;
+ }
+
+ .main--footer{
+    text-align: center;
+    background-color: #d9e4ea;
+    padding: 1em ; 
+ }
+
+
+
+ /* ==================================
+ 
+            Media Queries Styles 
+ 
+ =====================================*/
+
+
+ @media (min-width: 769px) {
+      .container {
+         width: 85%;
+         max-width: 1150px;
+         margin: 0 auto;
+      }
+
+      .wrap {
+         min-height: calc(100vh - 66.38px); 
+      }
+
+      .name, .main--nav li {
+         display: inline-block;
+         
+      }
+
+      .name {
+         float: left;
+      }
+      .main--nav {
+         float: right;
+      }
+
+      /******* Float clearfix   ************/
+
+
+      .clearfix::after {
+         content: "";
+         display: table;
+         clear: both;
+      }
+ }
